@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +18,7 @@ header {
   padding: 20px 40px;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 header h1 {
   margin-bottom: 15px;
@@ -57,6 +61,10 @@ main {
 #hero {
   text-align: center;
   padding: 100px 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
 }
 #hero h2 {
   font-size: 2rem;
@@ -67,6 +75,13 @@ main {
 }
 #skills ul {
   padding-left: 20px;
+}
+#skills li {
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+#skills li:hover {
+  transform: translateX(5px);
 }
 @media (max-width: 768px) {
   header {
